@@ -19,6 +19,8 @@ let houses = [
 for i in 0...3 {
     print(houses[i])
     print(houses[i].size)
+    print(houses[i].perimeter)
+    print(houses[i].area)
     print("House looks like: ")
     houses[i].draw()
     print()

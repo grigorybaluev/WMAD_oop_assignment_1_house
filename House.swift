@@ -15,11 +15,13 @@ class House {
     var fill: Character?
     
     var perimeter: Int {
-        return 0
+        return size * 2 + (size + 2) * 3
     }
     
     var area: Double {
-        return 0
+        let squareArea = pow(Double(size+1), 2)
+        let triangleArea = sqrt(3.0)/4.0 * pow(Double(size), 2)
+        return round(Double(squareArea + triangleArea)*100) / 100.0
     }
     
     init(size: Int, border: Character? = "X", fill: Character? = "*") {
