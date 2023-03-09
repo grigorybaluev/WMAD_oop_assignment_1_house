@@ -7,18 +7,21 @@
 
 import Foundation
 
+
+
 let houses = [
-  House(size: -5),
-  House(size: 7, border: "^"),
-  House(size: 12, border: "W", fill: "o"),
-  House(size: 50, border: "$", fill: "-")
+    House(size: -5),
+    House(size: 7, border: "^"),
+    House(size: 12, border: "W", fill: "o"),
+    House(size: 50, border: "$", fill: "-")
 ]
 
 for i in 0...3 {
-  print(houses[i])
-  print("House looks like: ")
-  houses[i].draw()
-  print()
+    print(houses[i])
+    print(houses[i].size)
+    print("House looks like: ")
+    houses[i].draw()
+    print()
 }
 
 houses[0].shrink()
@@ -43,3 +46,4 @@ for _ in 0..<3 {
   print(h1)
   h1.draw()
 }
+
