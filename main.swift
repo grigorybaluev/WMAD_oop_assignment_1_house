@@ -17,10 +17,7 @@ let houses = [
 ]
 
 for i in 0...3 {
-    print(houses[i])
-    print(houses[i].size)
-    print(houses[i].perimeter)
-    print(houses[i].area)
+    houses[i].getHouseInfo()
     print("House looks like: ")
     houses[i].draw()
     print()
@@ -32,20 +29,19 @@ houses[2].grow()
 
 print("================== TESTING GROW =====================")
 let h1 = houses[0]
-print(h1)
 h1.draw()
 for _ in 0..<2 {
-  print("\nGrowing...")
-  h1.grow()
-  print(h1)
-  h1.draw()
+    print("\nGrowing...")
+    h1.grow()
+    h1.getHouseInfo()
+    h1.draw()
 }
 
 print("================== TESTING SHRINK =====================")
 for _ in 0..<3 {
-  print("\nShrinking...")
-  h1.shrink()
-  print(h1)
-  h1.draw()
+    print("\nShrinking...")
+    h1.shrink()
+    h1.getHouseInfo()
+    h1.draw()
 }
 

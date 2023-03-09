@@ -97,4 +97,10 @@ class House {
         print()
     }
     
+    func getHouseInfo() {
+        print("House width and height base to roof = \(self.size) units.")
+        print("Perimeter of house = \(self.perimeter) units.")
+        print("Area of house = \(self.area) units.")
+    }
+    
 }
